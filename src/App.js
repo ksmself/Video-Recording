@@ -4,11 +4,6 @@ const App = () => {
   const recorder = document.getElementById("recorder");
   const player = document.getElementById("player");
 
-  // recorder.addEventListener("change", function (e) {
-  //   const file = e.target.files[0];
-  //   player.src = URL.createObjectURL(file);
-  // });
-
   const handleSuccess = function (stream) {
     player.srcObject = stream;
   };
